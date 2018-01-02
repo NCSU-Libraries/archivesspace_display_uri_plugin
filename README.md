@@ -14,3 +14,6 @@ frontend/views/resources/_show_inline.html.erb
 
 When new versions of ArchivesSpace are released, the overridden partials should be compared against the original versions in [ArchivesSpace master](https://github.com/archivesspace/archivesspace) to ensure that new core functionality is not affected.
 
+## Release notes
+
+* 2018-01-02 - Updated for ArchivesSpace v2.2.2
