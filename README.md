@@ -1,19 +1,12 @@
 archivesspace_display_uri_plugin
 ===================================
 
-A plugin for ArchivesSpace that adds the URI to the data displayed in the record pane in 'show' mode for resources, archival objects, digital objects, and accessions.
+> Note: This functionality will be added to an upcoming release of ArchivesSpace.
 
-NOTE TO PLUGIN MAINTANERS: This feature overrides core template partials:
-
-```
-frontend/views/accessions/show.html.erb
-frontend/views/archival_objects/_show_inline.html.erb
-frontend/views/digital_objects/_show_inline.html.erb
-frontend/views/resources/_show_inline.html.erb
-```
-
-When new versions of ArchivesSpace are released, the overridden partials should be compared against the original versions in [ArchivesSpace master](https://github.com/archivesspace/archivesspace) to ensure that new core functionality is not affected.
+A plugin for ArchivesSpace that adds the URI to the data displayed with audit info (creation and modification user/timestamp) in all records (except locations, where audit info is not displayed).
 
 ## Release notes
+
+* 2018-11-09 - Moved URI display from record pane to audit info, which only requires one helper override
 
 * 2018-01-02 - Updated for ArchivesSpace v2.2.2
